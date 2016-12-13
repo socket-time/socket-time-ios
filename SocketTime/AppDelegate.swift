@@ -15,14 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+        initializeAllManagers(launchOptions: launchOptions)
         setupRootViewController()
         
         return true
     }
     
-    func setupRootViewController() {
+    func initializeAllManagers(launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
+        ViewModelsManager.shared.initialize()
+        ThirdPartyServicesManager.shared.initializeWithLaunchOptions(launchOptions)
         RoutingManager.shared.initialize()
+    }
+    
+    func setupRootViewController() {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = RoutingManager.shared.rootVC
         window?.makeKeyAndVisible()

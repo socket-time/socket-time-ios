@@ -12,6 +12,11 @@
 		03346D8E1E00486300E4BBCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03346D8C1E00486300E4BBCC /* LaunchScreen.storyboard */; };
 		03346D991E00486300E4BBCC /* SocketTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03346D981E00486300E4BBCC /* SocketTimeTests.swift */; };
 		03346DA41E00486300E4BBCC /* SocketTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03346DA31E00486300E4BBCC /* SocketTimeUITests.swift */; };
+		03BCE1F61E004FAC00920AD4 /* ThirdPartyServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BCE1F51E004FAC00920AD4 /* ThirdPartyServicesManager.swift */; };
+		03BCE1F91E00516D00920AD4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03BCE1F81E00516D00920AD4 /* GoogleService-Info.plist */; };
+		03BCE1FB1E0054A600920AD4 /* Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BCE1FA1E0054A600920AD4 /* Times.swift */; };
+		03BCE1FD1E0055D400920AD4 /* ViewModelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BCE1FC1E0055D400920AD4 /* ViewModelsManager.swift */; };
+		03BCE1FF1E0055F400920AD4 /* TimesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BCE1FE1E0055F400920AD4 /* TimesVM.swift */; };
 		03EFDC801E004B39009B11F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EFDC7D1E004B39009B11F7 /* Assets.xcassets */; };
 		03EFDC811E004B39009B11F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EFDC7D1E004B39009B11F7 /* Assets.xcassets */; };
 		03EFDC821E004B39009B11F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EFDC7D1E004B39009B11F7 /* Assets.xcassets */; };
@@ -58,6 +63,12 @@
 		03346D9F1E00486300E4BBCC /* SocketTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03346DA31E00486300E4BBCC /* SocketTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketTimeUITests.swift; sourceTree = "<group>"; };
 		03346DA51E00486300E4BBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BCE1F51E004FAC00920AD4 /* ThirdPartyServicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPartyServicesManager.swift; sourceTree = "<group>"; };
+		03BCE1F81E00516D00920AD4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		03BCE1FA1E0054A600920AD4 /* Times.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Times.swift; sourceTree = "<group>"; };
+		03BCE1FC1E0055D400920AD4 /* ViewModelsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelsManager.swift; sourceTree = "<group>"; };
+		03BCE1FE1E0055F400920AD4 /* TimesVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimesVM.swift; sourceTree = "<group>"; };
+		03BCE2001E0059F800920AD4 /* SocketTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocketTime.entitlements; sourceTree = "<group>"; };
 		03EFDC7D1E004B39009B11F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03EFDC831E004B75009B11F7 /* RootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
 		03EFDC871E004BA3009B11F7 /* RoutingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingManager.swift; sourceTree = "<group>"; };
@@ -126,6 +137,8 @@
 		03346D821E00486300E4BBCC /* SocketTime */ = {
 			isa = PBXGroup;
 			children = (
+				03BCE2001E0059F800920AD4 /* SocketTime.entitlements */,
+				03BCE1F71E00516100920AD4 /* ThirdPartyTools */,
 				03EFDC791E004B39009B11F7 /* DataModels */,
 				03EFDC7A1E004B39009B11F7 /* Extensions */,
 				03EFDC7B1E004B39009B11F7 /* Managers */,
@@ -159,6 +172,14 @@
 			path = SocketTimeUITests;
 			sourceTree = "<group>";
 		};
+		03BCE1F71E00516100920AD4 /* ThirdPartyTools */ = {
+			isa = PBXGroup;
+			children = (
+				03BCE1F81E00516D00920AD4 /* GoogleService-Info.plist */,
+			);
+			path = ThirdPartyTools;
+			sourceTree = "<group>";
+		};
 		03EFDC781E004B20009B11F7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +192,7 @@
 		03EFDC791E004B39009B11F7 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
+				03BCE1FA1E0054A600920AD4 /* Times.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -186,6 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				03EFDC871E004BA3009B11F7 /* RoutingManager.swift */,
+				03BCE1F51E004FAC00920AD4 /* ThirdPartyServicesManager.swift */,
+				03BCE1FC1E0055D400920AD4 /* ViewModelsManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -201,6 +225,7 @@
 		03EFDC7E1E004B39009B11F7 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				03BCE1FE1E0055F400920AD4 /* TimesVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -313,6 +338,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = NA39UEQ37J;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					03346D931E00486300E4BBCC = {
 						CreatedOnToolsVersion = 8.1;
@@ -354,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03346D8E1E00486300E4BBCC /* LaunchScreen.storyboard in Resources */,
+				03BCE1F91E00516D00920AD4 /* GoogleService-Info.plist in Resources */,
 				03EFDC801E004B39009B11F7 /* Assets.xcassets in Resources */,
 				03346D891E00486300E4BBCC /* Main.storyboard in Resources */,
 			);
@@ -505,9 +536,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03BCE1FB1E0054A600920AD4 /* Times.swift in Sources */,
 				03EFDC8C1E004D70009B11F7 /* LandingVC.swift in Sources */,
+				03BCE1F61E004FAC00920AD4 /* ThirdPartyServicesManager.swift in Sources */,
 				03EFDC841E004B75009B11F7 /* RootVC.swift in Sources */,
 				03346D841E00486300E4BBCC /* AppDelegate.swift in Sources */,
+				03BCE1FF1E0055F400920AD4 /* TimesVM.swift in Sources */,
+				03BCE1FD1E0055D400920AD4 /* ViewModelsManager.swift in Sources */,
 				03EFDC881E004BA3009B11F7 /* RoutingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -669,6 +704,7 @@
 			baseConfigurationReference = 3B9C84D4E12EEB7E2E139E54 /* Pods-SocketTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SocketTime/SocketTime.entitlements;
 				DEVELOPMENT_TEAM = NA39UEQ37J;
 				INFOPLIST_FILE = SocketTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -683,6 +719,7 @@
 			baseConfigurationReference = 286ED8D5898890108A8875AE /* Pods-SocketTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SocketTime/SocketTime.entitlements;
 				DEVELOPMENT_TEAM = NA39UEQ37J;
 				INFOPLIST_FILE = SocketTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
